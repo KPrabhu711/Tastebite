@@ -1,0 +1,84 @@
+.home-container {
+    font-family: "Arial", sans-serif;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Super Delicious Section */
+.recipe-cards-container {
+    display: flex;
+    gap: 3rem; /* Increased the gap between cards */
+    justify-content: center;
+    padding: 1rem;
+}
+
+.recipe-card {
+    width: 350px; /* Increased card width */
+    height: 450px; /* Increased card height */
+    overflow: hidden; /* Ensure image doesn't overflow out of the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px); /* Add hover effect to raise card slightly */
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 250px; /* Control image height */
+    object-fit: cover; /* Ensures the image fits the card nicely */
+    border-radius: 10px;
+}
+
+/* Popular Categories Section */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem; /* Increased the gap between category cards */
+    justify-content: center;
+    padding: 1rem;
+}
+
+.category-card {
+    width: 300px; /* Increased card width */
+    height: 250px; /* Increased card height */
+    overflow: hidden;
+    text-align: center; /* Center the content */
+    transition: transform 0.3s ease;
+    padding: 1rem;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 150px; /* Set fixed width for the circular image */
+    height: 150px; /* Set fixed height for the circular image */
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 1rem; /* Adds space between the image and the text */
+}
+
+.category-card h4 {
+    font-size: 1.3rem; /* Set a larger font size for the category name */
+    font-weight: bold; /* Make the category name bold */
+    margin: 0; /* Remove default margin */
+}
+
+/* Increased space between sections */
+.super-delicious-section, .popular-categories-section {
+    margin-bottom: 4rem; /* Increased spacing between sections */
+}
+
+/* Added margin-top to super-delicious-section to create space between banner and section */
+.super-delicious-section {
+    margin-top: 40px;  /* Adjust this value to control the space */
+}

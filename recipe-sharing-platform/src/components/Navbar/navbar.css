@@ -1,0 +1,92 @@
+/* Main Navbar */
+.recipe-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Logo Section */
+  .recipe-navbar-logo img {
+    height: 50px;
+  }
+  
+  /* Links Container */
+  .recipe-navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .recipe-navbar-links p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .recipe-navbar-links p a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Login / Sign Up Button */
+  .recipe-navbar-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .recipe-navbar-login button {
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .recipe-navbar-login button:hover {
+    background-color: #000000;
+  }
+  
+  /* Mobile Menu */
+  .recipe-navbar-menu {
+    display: none;
+  }
+  
+  .recipe-navbar-menu_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+  }
+  
+  .recipe-navbar-menu_container-links p a {
+    color: #000;
+    text-decoration: none;
+    margin: 0.5rem 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .recipe-navbar-links {
+      display: none;
+    }
+    .recipe-navbar-menu {
+      display: block;
+    }
+  }
+  

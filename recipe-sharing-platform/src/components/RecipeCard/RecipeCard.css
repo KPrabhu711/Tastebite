@@ -1,0 +1,42 @@
+.recipe-card {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px; /* Increased width of the card */
+    text-align: center;
+    padding: 1rem; /* Added padding for better layout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better look */
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 250px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: bold; /* Bold title for emphasis */
+    margin: 0.5rem 0;
+}
+
+.recipe-card p {
+    font-size: 1.1rem; /* Increased font size for description */
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.recipe-card .rating {
+    font-size: 1.2rem; /* Increased font size for rating */
+    font-weight: bold; /* Emphasize the rating */
+    color: #f39c12; /* Changed rating color to a gold-like color */
+    margin-top: 0.5rem;
+}
+
+.recipe-card .rating span {
+    font-size: 1.3rem; /* Increased the size of the rating number */
+    color: #f39c12;
+}
+

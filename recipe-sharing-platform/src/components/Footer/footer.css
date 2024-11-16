@@ -1,0 +1,84 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+    gap: 2rem; /* Ensures equal spacing between sections */
+    flex-wrap: wrap; /* Enables responsive wrapping for smaller screens */
+  }
+  
+  .footer-logo-motto {
+    max-width: 40%; /* Adjusted width */
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-motto {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* Aligns Tastebite section to the right */
+    gap: 4rem; /* Spacing between the two columns */
+  }
+  
+  .footer-column {
+    min-width: 150px;
+  }
+  
+  .footer-links h4 {
+    font-size: 1rem;
+    font-weight: bold; /* Makes headings bold */
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #000; /* Changes color to black on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: flex-start;
+    }
+  
+    .footer-logo-motto {
+      max-width: 100%;
+      text-align: center; /* Centers logo and motto for smaller screens */
+    }
+  
+    .footer-links {
+      flex-direction: column; /* Stack link sections vertically */
+      align-items: flex-start;
+      gap: 2rem; /* Adjusts spacing between sections */
+    }
+  }
+  
